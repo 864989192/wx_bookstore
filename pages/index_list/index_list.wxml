@@ -1,0 +1,25 @@
+
+ <view class="container thumb">
+    <!-- 分类列表区域开始 -->
+    <view class="cateItem _width100" >
+      <!-- 图书列表区域开始 -->
+      <view class="_width100">
+        <view class="bookItem" wx:for="{{bookList}}"  wx:key="index">
+          <navigator url="../detail/detail?id={{item._id}}">
+            <image src="https://statics.zhuishushenqi.com{{item.cover}}"></image>
+            <view class="bookInfo">
+              <view class="bookTitle">{{item.title}}</view>
+              <view class="minorCate">{{item.minorCate}}</view>
+              <view class="author">{{item.author}}</view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+      <!-- 图书列表区域结束 -->
+    </view>
+    <!-- 分类列表区域结束 -->
+    <view  bindtap="load" class="btn" wx:if="{{btnShow}}">加载更多</view>
+    <text class="_textcolor _pb20" wx:if="{{!btnShow}}">没有更多</text>
+ 
+
+  </view>

@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="index_search _flex" bindtap="search">
+      <image src="../../img/search2.png"></image>
+      <input type="text" name="" id="" placeholder="搜索内容" />
+  </view>
+
+  <view class="">
+    <swiper autoplay="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#900" class="swiper"
+      circular="true" duration="1000" interval="3000">
+      <swiper-item>
+        <navigator url="pages/index/index">
+          <image src="http://m.iqiyipic.com/common/lego/20201025/a114023737354d8da155c9d84e8d8bb8.jpg" alt="" />
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator url="pages/index/index">
+          <image src="http://m.iqiyipic.com/common/lego/20201024/8aea96e6fd8f4f64ba0cece30f86753a.jpg" alt="" />
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator url="pages/index/index">
+          <image src="http://m.iqiyipic.com/common/lego/20201024/adaf35d9d7764f6fba7ffc38a8582326.jpg" alt="" />
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator url="pages/index/index">
+          <image src="http://m.iqiyipic.com/common/lego/20201022/29f0976b29574ee885b948e65ae924c4.jpg" alt="" />
+        </navigator>
+      </swiper-item>
+      <swiper-item>
+        <navigator url="pages/index/index">
+          <image src="http://m.iqiyipic.com/common/lego/20201023/c4cb6d2938044f549f1148a917890950.jpg" alt="" />
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+
+  <view class="classify _flex _between">
+    <view>
+      <image src="/img/paihang.png" class="_bordercircle" alt="" />
+      <text class="_block _text12 _textcolor _textcenter">排行榜</text>
+    </view>
+    <view>
+      <image src="/img/vip.png" class="_bordercircle" alt="" />
+      <text class="_block _text12 _textcolor _textcenter">VIP</text>
+    </view>
+    <view>
+      <image src="/img/fenlei.png" class="_bordercircle" alt="" />
+      <text class="_block _text12 _textcolor _textcenter">分类</text>
+    </view>
+  </view>
+
+  <view class="thumb">
+    <!-- 分类列表区域开始 -->
+    <view class="cateItem" wx:for="{{epub}}" wx:key="index">
+      <view class="header _flex _between">
+        <view>{{item.title}}</view>
+        <view>
+          <navigator url="/pages/index_list/index_list?id={{item.id}}"><text decode="true"
+              class="_text12 _textcolor">查看更多&gt;</text> </navigator>
+        </view>
+      </view>
+      <!-- 图书列表区域开始 -->
+      <view>
+        <view class="bookItem" wx:for="{{item.books}}" wx:for-index:="index2" wx:for-item="item2" wx:key="index2">
+          <navigator url="../detail/detail?id={{item2._id}}">
+            <image src="https://statics.zhuishushenqi.com{{item2.cover}}"></image>
+            <view class="bookInfo">
+              <view class="bookTitle">{{item2.title}}</view>
+              <view class="minorCate">{{item2.minorCate}}</view>
+              <view class="author">{{item2.author}}</view>
+            </view>
+          </navigator>
+        </view>
+      </view>
+      <!-- 图书列表区域结束 -->
+    </view>
+    <!-- 分类列表区域结束 -->
+  </view>
+
+</view>

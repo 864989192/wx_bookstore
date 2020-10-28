@@ -1,0 +1,106 @@
+/**app.wxss**/
+.container {
+  width: 750rpx;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx 20rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+} 
+
+/* 公共样式 */
+._flex{
+  display: flex;
+}
+._wrap{
+  flex-wrap: wrap;
+}
+._between{
+  justify-content: space-between;
+}
+._block{
+  display: block;
+}
+._text12{
+  font-size: 12px;
+}
+._text14{
+  font-size: 14px;
+}
+._textcolor{
+  color:#a9a9a9;
+}
+._textcenter{
+  text-align: center;
+}
+._bordercircle{
+  border-radius: 50%;
+}
+._width100{
+  width: 100%;
+}
+._pb20{
+  padding-bottom: 20rpx;
+}
+._relative{
+  position: relative;
+}
+._absolute{
+  position: absolute;
+}
+/* 图书列表样式 */
+
+.thumb{
+  padding: 0px 20rpx;
+}
+.cateItem{
+  margin-top:15rpx;
+}
+.header{
+  font-size:34rpx;
+  font-weight:bold;
+  padding-bottom:15rpx;
+  margin-bottom: 15rpx;
+  border-bottom:1rpx dotted #ccc;
+}
+.bookItem navigator{
+  display: flex;
+  align-items: top;
+  margin-bottom:20rpx;
+}
+.bookItem image{
+  width:200rpx;
+  height:200rpx;
+  padding:10rpx;
+  border:1px solid #ccc;
+  border-radius: 5px;
+}
+.bookInfo{
+  margin-left:20rpx;
+}
+.bookTitle{
+  font-size:30rpx;
+  margin-bottom:30rpx;
+}
+.minorCate,.author{
+  font-size:26rpx;
+  margin-bottom: 30rpx;
+  color:#999;
+}
+/* 搜索 */
+.index_search{
+  width: 710rpx;
+  font-size: 14px;
+  height: 80rpx;
+  background-color: #ebebf0;
+  border-radius: 20rpx;
+  margin-bottom: 20rpx;
+  align-items: center;
+  }
+  .index_search image{
+   width: 50rpx;
+   height: 50rpx;
+   padding: 0px 20rpx;
+  }

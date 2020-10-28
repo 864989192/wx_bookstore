@@ -1,0 +1,13 @@
+/* pages/index_list/index_list.wxss */
+.thumb{
+  padding: 0px 30rpx;
+}
+.btn{
+  font-size: 15px;
+  width: 680rpx;
+  text-align: center;
+  background-color: #f6f6f6;
+  border-radius: 10rpx;
+  padding: 15rpx;
+  margin-bottom: 20rpx;
+}

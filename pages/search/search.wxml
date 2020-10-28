@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="index_search _flex _width100 _relative" >
+    <image src="../../img/search2.png" bindtap="btnquery"></image>
+    <input type="text" name="" id="" bindinput="inp" placeholder="搜索内容" />
+    <view class="replenish _absolute " wx:if="{{replenish.length!==0}}">
+      <navigator url="/pages/index_list/index_list?query={{item}}" wx:for="{{replenish}}" wx:key="index">
+        <text class="">{{item}}</text>
+      </navigator>
+    </view>
+  </view>
+
+  <view class="remen _width100">
+    <view class="remen_title _flex _between _pb20">
+      <text>热门推荐</text>
+      <view class="_text14 _textcolor">换一批 <image src="/img/shuaxin.png"></image>
+      </view>
+    </view>
+    <view class="remen_con _flex _wrap">
+      <text class="_textcolor _text12 " wx:for="{{hotList}}" wx:key="index" data-id="{{item.book}}" bindtap="detail">{{item.word}}</text>
+    </view>
+  </view>
+
+  <view class="remen _width100">
+    <view class="remen_title _flex _between _pb20">
+      <text>搜索历史</text>
+      <view class="_text14 _textcolor">删除历史 <image src="/img/shanchu.png"></image>
+      </view>
+    </view>
+    <view class="lishi _flex ">
+      <view class="_textcolor  ">第一展战神</view>
+    </view>
+  </view>
+
+</view>

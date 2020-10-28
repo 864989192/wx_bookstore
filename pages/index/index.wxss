@@ -1,0 +1,29 @@
+/**index.wxss**/
+.swiper{
+width: 710rpx;
+height: 375rpx;
+border-radius: 20rpx;
+overflow: hidden;
+
+}
+.swiper image{
+width: 710rpx;
+height: 375rpx;
+border-radius: 20rpx;
+
+}
+
+
+
+
+/* 小标图 */
+.classify{
+  width: 600rpx;
+  padding: 20rpx 0px;
+}
+.classify image{
+  width: 100rpx;
+  height: 100rpx;
+  padding: 10rpx;
+  background-color: #e6effd;
+}

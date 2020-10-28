@@ -1,0 +1,39 @@
+/* pages/search/search.wxss */
+.remen{
+  padding: 20rpx;
+}
+
+.remen_title>text{
+font-size: 20px;
+}
+.remen image{
+   width: 30rpx;
+   height: 30rpx;
+  }
+.remen_con>text{
+background-color: #efeff4;
+padding: 10rpx 25rpx;
+border-radius: 20px;
+margin:0px 20rpx 20rpx 0rpx;
+}
+.lishi{
+  flex-direction: column;
+}
+.lishi>view{
+  border-bottom: 1px solid #efeff4;
+  padding: 30rpx;
+}
+
+/* 补全 */
+.replenish{
+  background-color: #fff;
+  border: 1px solid #ebebf0;
+  left: 30rpx;
+  top: 85rpx;
+  color: #42a5f5;
+  padding-left: 30rpx;
+width: 85%;
+}
+.replenish text{
+padding: 10rpx 0px;
+}
