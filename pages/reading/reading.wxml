@@ -1,0 +1,13 @@
+<!--pages/reading/reading.wxml-->
+<view class="reading">
+  <view class="rdtitle">
+    前转：艾恒之间
+  </view>
+  <view class="rdcontent">
+    前传：爱恨之间
+    近来，她感到有些嗜睡。
+    奈奈说：“大约是因怀着小皇子，以致分外渴睡些，娘娘毋须忧心。
+    ”
+    奈奈是照顾她的婢女，也是九天之上整个洗梧宫唯一肯对她笑，唤她一声“娘娘”的仙子。其他仙子大多看不起她。因为夜华没有封给她什么名分。也因为她没有仙籍，只是个凡
+  </view>
+</view>

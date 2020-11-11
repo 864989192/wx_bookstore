@@ -20,6 +20,12 @@
 ._between{
   justify-content: space-between;
 }
+._around{
+  justify-content: space-around;
+}
+._textred{
+  color: red;
+}
 ._block{
   display: block;
 }
@@ -28,6 +34,9 @@
 }
 ._text14{
   font-size: 14px;
+}
+._text16{
+  font-size: 16px;
 }
 ._textcolor{
   color:#a9a9a9;
@@ -49,6 +58,9 @@
 }
 ._absolute{
   position: absolute;
+}
+._fontweight{
+  font-weight: 600;
 }
 /* 图书列表样式 */
 

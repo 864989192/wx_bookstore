@@ -1,2 +1,98 @@
-<!--pages/ranking/ranking.wxml-->
-<text>pages/ranking/ranking.wxml</text>
+<view class="ranking">
+  <!-- 導航 -->
+  <view class="rheader _flex _between ">
+    <view class="{{classindex=='0'?'bornav':''}}" bindtap="changeindex" data-index='0'>
+      我的書架
+    </view>
+    <view class="{{classindex=='1'?'bornav':''}}" bindtap="changeindex" data-index='1'>
+      最近在读
+    </view>
+  </view>
+
+  <!-- 书架 -->
+  <view wx:if="{{rnav}}">
+    <!-- 编辑 -->
+    <view class="_flex _between edit">
+      <view class="_textcolor _fontweight">共2本</view>
+      <view class="_textred _fontweight" bindtap="change" data-select="0" wx:if="{{select}}">编辑</view>
+      <view class="_textred _fontweight" bindtap="allselect" wx:if="{{!select}}">全选</view>
+    </view>
+    <!-- 列表 -->
+    <checkbox-group bindchange="allcheckvalue">
+      <view class="thumb">
+        <view class="bookItem">
+          <navigator url="../reading/reading?id=1">
+            <image src="http://m.iqiyipic.com/common/lego/20201024/adaf35d9d7764f6fba7ffc38a8582326.jpg"></image>
+            <view class="bookInfo">
+              <view class="bookTitle">22</view>
+              <view class="minorCate">222</view>
+              <view class="author">22</view>
+            </view>
+          </navigator>
+          <view class="rico">
+            <navigator url="../detail/detail?id={{item2._id}}">
+              <image wx:if="{{select}}" src="../../img/jinru.png" alt="" />
+            </navigator>
+            <checkbox value="1" checked="{{allchecked}}" color="red" class="_bordercircle" wx:if="{{!select}}">
+            </checkbox>
+          </view>
+        </view>
+
+        <view class="bookItem">
+          <navigator url="../reading/reading?id=1">
+            <image src="http://m.iqiyipic.com/common/lego/20201024/adaf35d9d7764f6fba7ffc38a8582326.jpg"></image>
+            <view class="bookInfo">
+              <view class="bookTitle">22</view>
+              <view class="minorCate">222</view>
+              <view class="author">22</view>
+            </view>
+          </navigator>
+          <view class="rico">
+            <navigator url="../detail/detail?id={{item2._id}}">
+              <image wx:if="{{select}}" src="../../img/jinru.png" alt="" />
+            </navigator>
+
+            <checkbox color="red" checked="{{allchecked}}" value="2" wx:if="{{!select}}"></checkbox>
+          </view>
+        </view>
+      </view>
+    </checkbox-group>
+
+    <!-- 取消删除 -->
+    <view class="_flex _around bomqs" wx:if="{{!select}}">
+      <view class="qx _textcenter" data-select="1" bindtap="change">取消</view>
+      <view class="sc _textcenter">删除</view>
+    </view>
+  </view>
+
+  <!-- 最近在读 -->
+  <view wx:if="{{!rnav}}">
+    <!-- 编辑 -->
+    <view class="_flex _between reading">
+      <view class=" _text12  rleft">
+        因微信缓存限制，我们暂时最多为您保留最近读过的20本书的纪录，遇见喜欢的书要及时添加书架哦~
+      </view>
+      <view class="_textred  rright _flex">
+        <view>清空</view>
+      </view>
+    </view>
+    <!-- 列表 -->
+    <view class="thumb">
+      <view class="bookItem">
+        <navigator url="../detail/detail?id={{item2._id}}">
+          <image src="http://m.iqiyipic.com/common/lego/20201024/adaf35d9d7764f6fba7ffc38a8582326.jpg"></image>
+          <view class="bookInfo">
+            <view class="bookTitle">22</view>
+            <view class="minorCate">222</view>
+            <view class="author">22</view>
+          </view>
+        </navigator>
+      </view>
+
+
+    </view>
+  </view>
+
+
+
+</view>

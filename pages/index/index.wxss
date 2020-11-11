@@ -9,7 +9,6 @@ overflow: hidden;
 .swiper image{
 width: 710rpx;
 height: 375rpx;
-border-radius: 20rpx;
 
 }
 

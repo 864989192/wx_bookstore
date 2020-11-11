@@ -1,0 +1,22 @@
+<view class="ranking">
+  <!-- 導航 -->
+  <view class="rheader _flex _between ">
+    <view class="{{classindex=='0'?'bornav':''}}" bindtap="changeindex" data-index='0'>
+      男排
+    </view>
+    <view class="{{classindex=='1'?'bornav':''}}" bindtap="changeindex" data-index='1'>
+      女排
+    </view>
+  </view>
+
+</view >
+<view class="order _flex ">
+  <view class="orderl">
+<view wx:for="{{csb}}">
+  <text class="textcsb">{{item}}</text>
+</view>
+  </view>
+  <view class="orderr">
+123
+  </view>
+</view>

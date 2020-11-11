@@ -1,1 +1,111 @@
-/* pages/ranking/ranking.wxss */
+/**index.wxss**/
+.ranking {
+  padding: 0rpx 20rpx;
+}
+
+.ranking .thumb {
+  padding: 0rpx;
+}
+
+.ranking .bookItem {
+  position: relative;
+}
+
+.ranking .bookInfo {
+  width: 500rpx;
+  border-bottom: 1px solid #f8f8f8;
+  padding-bottom: 50rpx;
+}
+.ranking .edit{
+  padding: 25rpx;
+  border-bottom: 2px solid #f8f8f8;
+  margin-bottom: 20rpx;
+}
+
+.ranking .bookItem .rico {
+  position: absolute;
+  right: 10rpx;
+  top: 90rpx;
+}
+.ranking .bookItem .rico image{
+width: 40rpx;
+height: 40rpx;
+border: 0rpx;
+}
+.ranking .bornav{
+border-bottom: 1.5px solid #990000;
+padding-bottom: 30rpx;
+}
+.ranking .rheader{
+  width: 400rpx;
+  margin: auto;
+  padding: 20rpx;
+  color: #676767;
+  font-weight: 500;
+  }
+  .ranking .reading{
+    background-color: #f0eff4;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 40rpx;
+  }
+  .ranking .reading>.rleft{
+   color:#666666;
+   width: 400rpx;
+  }
+  
+  .ranking .reading>.rright>view{
+    border: 1px solid red;
+    border-radius:50rpx;
+    padding: 5rpx 50rpx;
+    height: 50rpx;
+    align-self: center;
+   }
+  
+   .ranking .qx{
+color:red;
+background-color: #ffdec6;
+width: 250rpx;
+padding: 10rpx 0px;
+border-radius: 40rpx;
+
+   }
+   .ranking .sc{
+color:white;
+background-color: #990000;
+width: 250rpx;
+padding: 10rpx 0px;
+border-radius: 40rpx;
+  }
+  .ranking .bomqs{
+    position: fixed;
+    bottom: 20rpx;
+    left: 0px;
+    right: 0px;
+  }
+
+  /* 重写 checkbox 样式 */
+ /* 未选中的 背景样式 */
+ checkbox .wx-checkbox-input{
+  border-radius: 50%;/* 圆角 */
+  width: 46rpx; /* 背景的宽 */
+  height: 46rpx; /* 背景的高 */
+}
+/* 选中后的 背景样式*/
+checkbox .wx-checkbox-input.wx-checkbox-input-checked{
+  border: 1rpx solid #f3333e;
+  background: #f3333e;
+}
+ /* 选中后的 对勾样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before{
+  border-radius: 50%;/* 圆角 */
+  width: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx;/* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size:30rpx; /* 对勾大小 30rpx */
+  color:#fff; /* 对勾颜色 白色 */
+  background: transparent;
+  transform:translate(-50%, -50%) scale(1);
+  -webkit-transform:translate(-50%, -50%) scale(1);
+}

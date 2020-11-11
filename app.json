@@ -1,20 +1,24 @@
 {
   "pages":[
-
-
     "pages/index/index",
+
+    "pages/order/order",
+
+    "pages/ranking/ranking",
+
+    "pages/reading/reading",
+
     "pages/index_list/index_list",
     "pages/search/search",
 
     "pages/mine/mine",
     "pages/detail/detail",
-    "pages/ranking/ranking",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"dark",
     "navigationBarBackgroundColor": "#900",
-    "navigationBarTitleText": "学子书院",
+    "navigationBarTitleText": "",
     "navigationBarTextStyle":"white",
     "enablePullDownRefresh": true
   },
